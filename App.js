@@ -9,6 +9,7 @@ import { MainScreen } from './src/screens/MainScreen';
 import { SecondScreen } from './src/screens/SecondScreen';
 import { LastScreen } from './src/screens/LastScreen';
 import * as Font from 'expo-font';
+import LinearGradient from 'expo-linear-gradient';
 const Stack = createStackNavigator();
 
 export default function App() {
@@ -22,11 +23,12 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="MainScreen">
+        <Stack.Navigator initialRouteName="MainScreen" headerMode="none">
           <Stack.Screen
             name="MainScreen"
             component={MainScreen}
             options={{}}
+           
           />
           <Stack.Screen name="SecondScreen" component={SecondScreen} options={{}} />
           <Stack.Screen name="LastScreen" component={LastScreen} options={{}} />

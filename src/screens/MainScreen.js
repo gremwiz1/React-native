@@ -6,9 +6,12 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { Normalize } from '../components/Normalize';
+import { LinearGradient } from 'expo-linear-gradient';
 export const MainScreen = ({ navigation }) => {
     return (
         <SafeAreaView>
+            <LinearGradient colors={['rgba(107, 115, 255, 0)', 'rgba(0, 13, 255, 1.0)']} start={{x: 0, y: 1}} 
+end={{x: 0, y: 1}} style= {{}}>
             <View style={styles.container}>
                 <Header />
                 <View style={styles.contentMainScreen}>
@@ -23,12 +26,13 @@ export const MainScreen = ({ navigation }) => {
                 </View>
                 <Footer titleButton={'Cool!'} navigation={navigation} activeMainScreen={true} activeSecondScreen={false} activeLastScreen={false} />
             </View>
+            </LinearGradient>
         </SafeAreaView>
     )
 }
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#000dff'
+        //backgroundColor: `linear-gradient(135deg, #6b73ff 0%, #000dff 100%)`
     },
     textOpacity: {
         fontFamily: 'RobotoBold',

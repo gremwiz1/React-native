@@ -10,8 +10,8 @@ const styles = StyleSheet.create({
     header: {
         flexDirection: 'row',
         paddingLeft: 20,
-        height: 60,
-        paddingTop: 20,
+        height: 70,
+        paddingTop: 30,
     },
     headerText: {
         fontFamily: 'RobotoBold',

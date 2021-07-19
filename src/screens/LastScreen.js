@@ -11,7 +11,7 @@ export const LastScreen = ({ navigation }) => {
     return (
         <SafeAreaView style={styles.container}>
             <Header />
-            <View>
+            <View style={styles.contentLastScreen}>
                 <Text style={styles.opacityText}>How it works</Text>
                 <Text style={styles.normalText}>Share birth details</Text>
                 <Text style={styles.normalText}>Ask a question</Text>
@@ -49,6 +49,6 @@ const styles = StyleSheet.create({
     },
     contentLastScreen: {
         justifyContent: 'space-between',
-        height: '68%'
+        height: '70%'
     }
 })

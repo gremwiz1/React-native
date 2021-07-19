@@ -24,7 +24,7 @@ export const Footer = ({ titleButton, navigation, activeMainScreen, activeSecond
                     <View style={activeLastScreen ? styles.activeIconNavigation : styles.iconNavigation}></View>
                 </TouchableOpacity>
             </View>
-            <TouchableOpacity style={styles.button}><Text>{titleButton}</Text></TouchableOpacity>
+            <TouchableOpacity style={styles.button}><Text style={styles.textButton}>{titleButton}</Text></TouchableOpacity>
         </View>
     )
 }
@@ -34,7 +34,8 @@ const styles = StyleSheet.create({
         borderRadius: 28,
         marginBottom: 10,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        height: 44
     },
     footer: {
         padding: 20,
