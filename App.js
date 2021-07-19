@@ -2,15 +2,9 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useEffect } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import SafeAreaView from 'react-native-safe-area-view';
-import { MainScreen } from './src/screens/MainScreen';
-import { SecondScreen } from './src/screens/SecondScreen';
-import { LastScreen } from './src/screens/LastScreen';
 import * as Font from 'expo-font';
-import LinearGradient from 'expo-linear-gradient';
-const Stack = createStackNavigator();
+import Swipe from './src/components/Swipe';
 
 export default function App() {
   useEffect(() => {
@@ -23,16 +17,7 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="MainScreen" headerMode="none">
-          <Stack.Screen
-            name="MainScreen"
-            component={MainScreen}
-            options={{}}
-           
-          />
-          <Stack.Screen name="SecondScreen" component={SecondScreen} options={{}} />
-          <Stack.Screen name="LastScreen" component={LastScreen} options={{}} />
-        </Stack.Navigator>
+        <Swipe />
       </NavigationContainer>
     </SafeAreaProvider>
   );

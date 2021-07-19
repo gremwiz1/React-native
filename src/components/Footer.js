@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { View, StyleSheet, TouchableOpacity, Text } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
 export const Footer = ({ titleButton, navigation, activeMainScreen, activeSecondScreen, activeLastScreen }) => {
 
     return (

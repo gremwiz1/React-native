@@ -1,8 +1,6 @@
 import React from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 import SafeAreaView from 'react-native-safe-area-view';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { Normalize } from '../components/Normalize';
